@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MGaris",
+            "request": "launch",
+            "mainClass": "MGaris",
+            "projectName": "PBO SEMESTER 4_545f6568"
+        },
+        {
+            "type": "java",
             "name": "MTitik",
             "request": "launch",
             "mainClass": "MTitik",
