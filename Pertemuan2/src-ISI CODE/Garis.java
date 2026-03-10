@@ -49,6 +49,8 @@ public class Garis {
 
     /*************** METHOD ***************/
     // panjang garis
+
+
     public double getPanjang() {
         double dx = titikAkhir.getAbsis() - titikAwal.getAbsis();
         double dy = titikAkhir.getOrdinat() - titikAwal.getOrdinat();
