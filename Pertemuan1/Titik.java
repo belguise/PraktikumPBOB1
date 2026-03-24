@@ -5,7 +5,6 @@
  */
 //source code class titik ini diambil dari buku "Pemrograman Berbasis Objek dengan Java" edisi 2 karya I.K. Sutedja, dengan beberapa modifikasi untuk memenuhi kebutuhan praktikum.
 
-
 public class Titik {
     /************************ ATRIBUT ************************/
     double absis;
