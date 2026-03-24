@@ -3,50 +3,88 @@
  * Pembuat    : Lintang Aulia Nuraini/24060124120017
  * Tanggal    : Kamis, 19 Februari 2026
  */
+//source code class titik ini diambil dari buku "Pemrograman Berbasis Objek dengan Java" edisi 2 karya I.K. Sutedja, dengan beberapa modifikasi untuk memenuhi kebutuhan praktikum.
+
 
 public class Titik {
+   double absis = (double)0.0F;
+   double ordinat = (double)0.0F;
+   static int counterTitik = 0;
 
-    /*************** ATRIBUT ***************/
-    double absis;
-    double ordinat;
+   Titik() {
+      ++counterTitik;
+   }
 
-    /*************** METHOD ***************/
+   static int getCounterTitik() {
+      return counterTitik;
+   }
 
-    // konstruktor untuk membuat titik (0,0)
-    Titik() {
-        absis = 0;
-        ordinat = 0;
-    }
+   double getAbsis() {
+      return this.absis;
+   }
 
-    // mengembalikan nilai absis
-    double getAbsis() {
-        return absis;
-    }
+   double getOrdinat() {
+      return this.ordinat;
+   }
 
-    // mengembalikan nilai ordinat
-    double getOrdinat() {
-        return ordinat;
-    }
+   void setAbsis(double var1) {
+      this.absis = var1;
+   }
 
-    // mengeset absis titik dengan nilai baru x
-    void setAbsis(double x) {
-        absis = x;
-    }
+   void setOrdinat(double var1) {
+      this.ordinat = var1;
+   }
 
-    // mengeset ordinat titik dengan nilai baru y
-    void setOrdinat(double y) {
-        ordinat = y;
-    }
+   void geser(double var1, double var3) {
+      this.absis += var1;
+      this.ordinat += var3;
+   }
 
-    // menggeser nilai absis dan ordinat titik masing-masing sejauh x dan y
-    void geser(double x, double y) {
-        absis = absis + x;
-        ordinat = ordinat + y;
-    }
+   void printTitik() {
+      System.out.println("Titik (" + this.absis + "," + this.ordinat + ")");
+   }
 
-    // mencetak koordinat titik
-    void printTitik() {
-        System.out.println("Titik (" + absis + ", " + ordinat + ")");
-    }
+   int getKuadran() {
+      if (this.absis > (double)0.0F && this.ordinat > (double)0.0F) {
+         return 1;
+      } else if (this.absis < (double)0.0F && this.ordinat > (double)0.0F) {
+         return 2;
+      } else if (this.absis < (double)0.0F && this.ordinat < (double)0.0F) {
+         return 3;
+      } else {
+         return this.absis > (double)0.0F && this.ordinat < (double)0.0F ? 4 : 0;
+      }
+   }
 
-} //end class Titik
+   double getJarakPusat() {
+      double var1 = Math.sqrt(Math.pow(this.absis, (double)2.0F) + Math.pow(this.ordinat, (double)2.0F));
+      return var1;
+   }
+
+   double getJarak(Titik var1) {
+      double var2 = Math.sqrt(Math.pow(this.absis - var1.absis, (double)2.0F) + Math.pow(this.ordinat - var1.ordinat, (double)2.0F));
+      return var2;
+   }
+
+   void setRefleksiX() {
+      this.ordinat = -this.ordinat;
+   }
+
+   void setRefleksiY() {
+      this.absis = -this.absis;
+   }
+
+   Titik getRefleksiX() {
+      Titik var1 = new Titik();
+      var1.absis = this.absis;
+      var1.ordinat = -this.ordinat;
+      return var1;
+   }
+
+   Titik getRefleksiY() {
+      Titik var1 = new Titik();
+      var1.absis = -this.absis;
+      var1.ordinat = this.ordinat;
+      return var1;
+   }
+}
