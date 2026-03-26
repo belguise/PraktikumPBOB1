@@ -6,12 +6,12 @@
 
 public class Garis {
 
-    /*************** ATRIBUT ***************/
+    //ATRIBUT
     private Titik titikAwal;
     private Titik titikAkhir;
     private static int counterGaris = 0;
 
-    /*************** KONSTRUKTOR ***************/
+    //KONSTRUKTOR
     // konstruktor tanpa parameter
     public Garis() {
         titikAwal = new Titik(0, 0);
@@ -26,7 +26,7 @@ public class Garis {
         counterGaris++;
     }
 
-    /*************** SELEKTOR & MUTATOR ***************/
+    // SELEKTOR DAN MUTATOR
     public Titik getTitikAwal() {
         return titikAwal;
     }
@@ -47,7 +47,7 @@ public class Garis {
         return counterGaris;
     }
 
-    /*************** METHOD ***************/
+    //METHODDD
     // panjang garis
 
 
