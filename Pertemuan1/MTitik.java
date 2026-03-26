@@ -33,14 +33,14 @@ public class MTitik {
 
         // setRefleksiX untuk T1
         System.out.println("Refleksi terhadap sumbu X untuk T1: ");
-        T1.setRefleksiX();
+        T1.getRefleksiX();
 
         // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu X
         T1.printTitik();
 
         // setRefleksiY untuk T1
         System.out.println("Refleksi terhadap sumbu Y untuk T1: ");
-        T1.setRefleksiY();
+        T1.getRefleksiY();
 
         // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu Y
         T1.printTitik();
@@ -92,14 +92,14 @@ public class MTitik {
 
         // setRefleksiX untuk T2
         System.out.println("Refleksi terhadap sumbu X untuk T2: ");
-        T2.setRefleksiX();
+        T2.getRefleksiX();
 
         // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu X
         T2.printTitik();
 
         // setRefleksiY untuk T2
         System.out.println("Refleksi terhadap sumbu Y untuk T2: ");
-        T2.setRefleksiY();
+        T2.getRefleksiY();
 
         // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu Y
         T2.printTitik();

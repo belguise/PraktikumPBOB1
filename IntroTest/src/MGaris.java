@@ -9,7 +9,7 @@ Tanggal      : 26 Februari 2026
 public class MGaris {
     public static void main(String[] args) {
         // Membuat objek garis G1 dengan titik awal (1,2) dan titik akhir (4,6)
-        Garis G1 = new Garis(1, 2, 4, 6);
+        Garis G1 = new Garis();
         
         // membuat objek garis G2 dengan titik awal (0,0) dan titik akhir (0,0)
         Garis G2 = new Garis();
@@ -18,11 +18,11 @@ public class MGaris {
         Titik t1 = new Titik();
         t1.setAbsis(2);
         t1.setOrdinat(3);
-        G2.setTitik1(t1);
+        G2.setTitikAkhir(t1);
         Titik t2 = new Titik();
         t2.setAbsis(5);
         t2.setOrdinat(7);
-        G2.setTitik2(t2);
+        G2.setTitikAkhir(t2);
         
         // mencetak garis G1 dan G2
         System.out.println("Garis G1:");
@@ -31,11 +31,11 @@ public class MGaris {
         G2.printGaris();
 
         // menghitung banyaknya objek garis yang telah dibuat
-        System.out.println("Jumlah objek garis yang telah dibuat: " + Garis.getCountGaris());
+        System.out.println("Jumlah objek garis yang telah dibuat: " + Garis.getCounterGaris());
 
         // menghitung panjang garis G1 dan G2
-        System.out.println("Panjang garis G1: " + G1.getPanjangGaris());
-        System.out.println("Panjang garis G2: " + G2.getPanjangGaris());
+        System.out.println("Panjang garis G1: " + G1.getPanjang());
+        System.out.println("Panjang garis G2: " + G2.getPanjang());
 
         // menghitung gradien garis G1 dan G2
         System.out.println("Gradien garis G1: " + G1.getGradien());
@@ -52,8 +52,8 @@ public class MGaris {
 
         // mencetak persamaan garis G1 dan G2
         System.out.println("Persamaan garis G1:");
-        G1.printPersamaanGaris();
+        G1.getPersamaanGaris();
         System.out.println("Persamaan garis G2:");
-        G2.printPersamaanGaris();
+        G2.getPersamaanGaris();
     }
 }

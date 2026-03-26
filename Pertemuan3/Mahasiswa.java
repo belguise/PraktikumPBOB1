@@ -126,9 +126,9 @@ public class Mahasiswa {
         }
         System.out.println("\nDosen Wali:");
         if (dosenWali != null){
-            System.out.println("Nama: " + dosenWali.getNama());
-            System.out.println("NIP: " + dosenWali.getNip());
-            System.out.println("Prodi: " + dosenWali.getProdi());
+            System.out.println("Nama: " + dosenWali.getnama());
+            System.out.println("NIP: " + dosenWali.getnama());
+            System.out.println("Prodi: " + dosenWali.getprodi());
         }
         else {
             System.out.println("belum punya dosen wali.");
