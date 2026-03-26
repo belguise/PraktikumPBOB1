@@ -1,4 +1,3 @@
-
 /* Nama File  : MTitik.java
  * Deskripsi  : berisi main class dalam class Titik
  * Pembuat    : Lintang Aulia Nuraini/24060124120017
@@ -33,14 +32,14 @@ public class MTitik {
 
         // setRefleksiX untuk T1
         System.out.println("Refleksi terhadap sumbu X untuk T1: ");
-        T1.getRefleksiX();
+        T1.setRefleksiX();
 
         // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu X
         T1.printTitik();
 
         // setRefleksiY untuk T1
         System.out.println("Refleksi terhadap sumbu Y untuk T1: ");
-        T1.getRefleksiY();
+        T1.setRefleksiY();
 
         // Menampilkan koordinat T1 setelah direfleksikan terhadap sumbu Y
         T1.printTitik();
@@ -92,14 +91,14 @@ public class MTitik {
 
         // setRefleksiX untuk T2
         System.out.println("Refleksi terhadap sumbu X untuk T2: ");
-        T2.getRefleksiX();
+        T2.setRefleksiX();
 
         // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu X
         T2.printTitik();
 
         // setRefleksiY untuk T2
         System.out.println("Refleksi terhadap sumbu Y untuk T2: ");
-        T2.getRefleksiY();
+        T2.setRefleksiY();
 
         // Menampilkan koordinat T2 setelah direfleksikan terhadap sumbu Y
         T2.printTitik();
@@ -127,4 +126,3 @@ public class MTitik {
         // menghitung jumlah objek Titik yang telah dibuat
         System.out.println("Jumlah objek Titik yang telah dibuat: " + Titik.getCounterTitik());
     }
-}
