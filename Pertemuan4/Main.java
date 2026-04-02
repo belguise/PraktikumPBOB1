@@ -3,6 +3,7 @@
 //Kelas : PBO B2
 //Tanggal : 01 Maret 2026
 
+import Pertemuan6.Lingkaran;
 
 public class Main {
     public static void main(String[] args) {

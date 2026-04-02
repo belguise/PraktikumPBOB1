@@ -1,3 +1,4 @@
+package Pertemuan6;
 
  //File      : ExceptionOnArray.java
  // Deskripsi : Program penggunaan eksepsi menggunakan class library Java

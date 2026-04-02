@@ -1,3 +1,4 @@
+package Pertemuan6;
 // Nama File = Asersi1.java
 // Pembuat = Lintang Aulia Nuraini
 // NIM = 24060124120017

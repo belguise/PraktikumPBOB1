@@ -1,4 +1,4 @@
-import Pertemuan6.AngkaSialException;
+package Pertemuan6;
 
 /**
  * File      : AngkaSial.java
